@@ -18,7 +18,7 @@ import styles from './style/styles';
 const Home = () => {
 
     return (
-        <View style={{}}>
+        <View style={{ alignItems: 'center', backgroundColor: 'white' }}>
             <ScrollView style={styles.container}>
                 <View style={styles.headerContainer}>
                     <Stack.Screen
@@ -32,7 +32,7 @@ const Home = () => {
                     />
                 </View>
                 <View style={{ display: "flex", flexDirection: "column", gap: 14, paddingBottom: 100, backgroundColor: "white" }}>
-                    <View style={{ width: 370, height: 338, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
+                    <View style={{ width: 370, height: 350, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
                         <View style={{ display: "flex", flexDirection: "row", alignContent: "center", alignItems: "center", gap: 10 }}>
                             <View style={{}}><Image style={styles.profilePicture} source={require('../../avatar.png')} /></View>
                             <View style={{ display: "flex", flexDirection: "column" }}>
@@ -42,7 +42,7 @@ const Home = () => {
                         </View>
                         <View style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/panorama1.jpg')} /></View>
                     </View>
-                    <View style={{ width: 370, height: 338, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
+                    <View style={{ width: 370, height: 350, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
                         <View style={{ display: "flex", flexDirection: "row", alignContent: "center", alignItems: "center", gap: 10 }}>
                             <View style={{}}><Image style={styles.profilePicture} source={require('../../avatar.png')} /></View>
                             <View style={{ display: "flex", flexDirection: "column" }}>
@@ -52,7 +52,7 @@ const Home = () => {
                         </View>
                         <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/leonardo.webp')} /></View>
                     </View>
-                    <View style={{ width: 370, height: 338, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
+                    <View style={{ width: 370, height: 350, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
                         <View style={{ display: "flex", flexDirection: "row", alignContent: "center", alignItems: "center", gap: 10 }}>
                             <View style={{}}><Image style={styles.profilePicture} source={require('../../avatar.png')} /></View>
                             <View style={{ display: "flex", flexDirection: "column" }}>

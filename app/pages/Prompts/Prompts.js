@@ -18,13 +18,23 @@ import styles from './style/styles';
 
 
 const Home = () => {
+    const [isEnabled, setIsEnabled] = useState(false);
+    const [textInputValue, setTextInputValue] = useState('');
 
-    const newPrompt = (text) => {
 
+    const handleButtonPress = (text) => {
+        setIsEnabled(true);
+        const newText = text;
+        setTextInputValue("");
+        setTextInputValue(prevText => prevText + newText);
+    };
 
+    const handleChangeText = (text) => {
 
-    }
+        setTextInputValue(text);
+    };
     return (
+
         <View style={styles.container}>
             <View style={styles.headerContainer}>
                 <Stack.Screen
@@ -37,37 +47,108 @@ const Home = () => {
                     }}
                 />
             </View>
-            <View style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+            <View style={{ display: 'flex', flexDirection: 'column', gap: 32, marginTop: 10 }}>
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 28, marginLeft: 10, marginRight: 10 }}>
-                    <Text style={styles.promptTextLong}>How does _ apply to...</Text>
-                    <Text style={{ backgroundColor: "#E6EEFA", height: 40, width: 120, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10 }}>How to...</Text>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('How does _ apply to ');
+                        }}
+                    >
+                        <Text style={styles.promptTextLong}>How does _ apply to...</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('How to ');
+                        }}
+                    >
+                        <Text style={styles.promptTextShort}>How to...</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 28, marginLeft: 10, marginRight: 10 }}>
-                    <Text style={{ backgroundColor: "#E6EEFA", height: 40, width: 120, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10 }}>When did...</Text>
-                    <Text style={styles.promptTextLong}>Find me resources on...</Text>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('When did ');
+                        }}
+                    >
+                        <Text style={styles.promptTextShort}>When did...</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('Find me resources on ');
+                        }}
+                    >
+                        <Text style={styles.promptTextLong}>Find me resources on...</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 28, marginLeft: 10, marginRight: 10 }}>
-                    <Text style={styles.promptTextLong}>Can _ improve...</Text>
-                    <Text style={{ backgroundColor: "#E6EEFA", height: 40, width: 120, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10 }}>Why do...</Text>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('Can _ improve ');
+                        }}
+                    >
+                        <Text style={styles.promptTextLong}>Can _ improve...</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('Why do ');
+                        }}
+                    >
+                        <Text style={styles.promptTextShort}>Why do...</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 28, marginLeft: 10 }}>
-                    <Text style={{ backgroundColor: "#E6EEFA", height: 40, width: 120, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10 }}>What causes...</Text>
-                    <Text style={styles.promptTextLong}>lksadsad</Text>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('What causes ');
+                        }}
+                    ><Text style={styles.promptTextShort}>What causes...</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('What causes ');
+                        }}
+                    ><Text style={styles.promptTextLong}>lksadsad</Text></TouchableOpacity>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 28, marginLeft: 10, marginRight: 10 }}>
-                    <Text style={styles.promptTextLong}>lksadsad</Text>
-                    <Text style={{ backgroundColor: "#E6EEFA", height: 40, width: 120, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10 }}>lksadsad</Text>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('What causes ');
+                        }}
+                    ><Text style={styles.promptTextLong}>lksadsad</Text></TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('What causes ');
+                        }}
+                    >
+                        <Text style={styles.promptTextShort}>lksadsad</Text>
+                    </TouchableOpacity>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 28, marginLeft: 10, marginRight: 10 }}>
-                    <Text style={{ backgroundColor: "#E6EEFA", height: 40, width: 120, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10 }}>lksadsad</Text>
-                    <Text style={styles.promptTextLong}>lksadsad</Text>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('What causes ');
+                        }}
+                    >
+                        <Text style={styles.promptTextShort}>lksadsad</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            handleButtonPress('What causes ');
+                        }}
+                    >
+                        <Text style={styles.promptTextLong}>lksadsad</Text>
+                    </TouchableOpacity>
                 </View>
 
                 <View style={{ marginLeft: 10, marginRight: 10, marginTop: 10 }}>
                     <View style={styles.textInputContainer}>
+
                         <TextInput
-                            placeholder='How to...'
-                            autoCapitalize='none' />
+                            autoCapitalize='none'
+                            value={textInputValue}
+                            onChangeText={handleChangeText}
+                            editable={isEnabled || textInputValue.length > 0 ? true : false}
+                        />
                     </View>
                 </View>
             </View>
@@ -75,7 +156,7 @@ const Home = () => {
                 <TouchableOpacity
                     style={styles.mainButton}
                     onPress={() => {
-                        router.push('pages/Home/Home');
+                        router.push('pages/Character/Character');
                     }}>
                     <Text style={{ color: 'white' }}>Continue</Text>
                 </TouchableOpacity>

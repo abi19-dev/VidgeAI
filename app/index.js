@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
         height: 100
     },
     karateLogo: {
-        width: 390,
-        height: 370
+        width: 550,
+        height: 500,
     }
 })
 const Home = () => {
@@ -56,13 +56,10 @@ const Home = () => {
                     }}
                 />
                 <View style={styles.mojView}>
-                    <Image style={styles.karateLogo} source={require('./karateLogo.png')} />
-                    <TouchableOpacity
-                        style={styles.btn}
-                        onPress={() => {
-                            router.push('pages/Login/Login');
-                        }}>
-                        <Text style={styles.myText}>Let's Go</Text>
+                    <TouchableOpacity onPress={() => {
+                        router.push('pages/Login/Login');
+                    }}>
+                        <Image style={styles.karateLogo} source={require('./transparentno.png')} />
                     </TouchableOpacity>
                 </View>
             </View>

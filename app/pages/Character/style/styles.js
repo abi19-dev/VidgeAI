@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-
+        backgroundColor: "white"
     },
     profilePicture: {
         width: 58,
@@ -130,7 +130,54 @@ const styles = StyleSheet.create({
         fontSize: 10,
         alignSelf: "center"
     },
-
+    spongebob: {
+        width: 118,
+        height: 111,
+        marginTop: 30,
+        alignSelf: 'center',
+    },
+    freeman: {
+        width: 105,
+        height: 160,
+        marginTop: 10,
+        alignSelf: 'center'
+    },
+    jala: {
+        width: 163,
+        height: 107,
+        marginTop: 15,
+        alignSelf: 'center'
+    },
+    spiderman: {
+        width: 152,
+        height: 152,
+        marginTop: 10,
+        alignSelf: 'center'
+    },
+    biden: {
+        width: 122,
+        height: 114,
+        marginTop: 10,
+        alignSelf: 'center',
+    },
+    ronaldo: {
+        width: 140,
+        height: 140,
+        marginTop: 10,
+        alignSelf: 'center',
+    },
+    batman: {
+        width: 100,
+        height: 150,
+        marginTop: 10,
+        alignSelf: 'center',
+    },
+    ben10: {
+        width: 100,
+        height: 150,
+        marginTop: 10,
+        alignSelf: 'center',
+    }
 });
 
 export default styles;

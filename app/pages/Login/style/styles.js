@@ -49,7 +49,16 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         width: 332,
         height: 40,
-        justifyContent: "center"
+        justifyContent: "center",
+        shadowColor: '#5790DF',
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        // Drop shadow for Android
+        elevation: 10,
     },
     secondaryButton: {
         backgroundColor: "#FFFFFF",
@@ -60,7 +69,16 @@ const styles = StyleSheet.create({
         width: 332,
         height: 40,
         alignSelf: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        shadowColor: '#000000',
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowOpacity: 0.8,
+        shadowRadius: 10,
+        // Drop shadow for Android
+        elevation: 10,
     },
     textInputOTPContainer: {
         display: "flex",

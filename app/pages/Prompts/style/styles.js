@@ -132,14 +132,21 @@ const styles = StyleSheet.create({
         alignSelf: "center"
     },
     textInputContainer: {
-        borderBottomColor: '#666',
-        borderBottomWidth: 1,
         paddingTop: 15,
         backgroundColor: "#FFFFFF",
         borderColor: "rgba(0, 0, 0, 0.2)",
         borderWidth: 2, width: "100%", borderRadius: 20,
         justifyContent: 'flex-start', paddingLeft: 10, height: 40,
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        shadowColor: '#000000',
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowOpacity: 0.8,
+        shadowRadius: 10,
+        // Drop shadow for Android
+        elevation: 10,
     },
     buttonsContainer: {
         display: "flex",
@@ -154,7 +161,16 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         width: 332,
         height: 40,
-        justifyContent: "center"
+        justifyContent: "center",
+        shadowColor: '#5790DF',
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        // Drop shadow for Android
+        elevation: 10,
     },
     secondaryButton: {
         backgroundColor: "#FFFFFF",
@@ -165,7 +181,16 @@ const styles = StyleSheet.create({
         width: 332,
         height: 40,
         alignSelf: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        shadowColor: '#000000',
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowOpacity: 0.8,
+        shadowRadius: 10,
+        // Drop shadow for Android
+        elevation: 10,
     },
     promptTextLong: {
         backgroundColor: "#E6EEFA", height: 40, width: 210, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10, shadowColor: '#000000',
@@ -173,10 +198,21 @@ const styles = StyleSheet.create({
             width: 0,
             height: 10,
         },
-        shadowOpacity: 0.25,
-        shadowRadius: 20,
+        shadowOpacity: 0.8,
+        shadowRadius: 10,
         // Drop shadow for Android
-        elevation: 20,
+        elevation: 10,
+    },
+    promptTextShort: {
+        backgroundColor: "#E6EEFA", height: 40, width: 120, borderRadius: 20, textAlignVertical: 'center', paddingLeft: 10, shadowColor: '#000000',
+        shadowOffset: {
+            width: 0,
+            height: 10,
+        },
+        shadowOpacity: 0.8,
+        shadowRadius: 10,
+        // Drop shadow for Android
+        elevation: 10,
     }
 
 });
