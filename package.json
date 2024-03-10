@@ -38,7 +38,8 @@
     "rn-curved-navigation-bar": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "metro-config": "^0.80.6"
   },
   "private": true
 }

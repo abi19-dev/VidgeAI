@@ -63,7 +63,7 @@ const Home = () => {
                         </View>
                         <View style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/panorama1.jpg')} /><Ionicons style={{ position: 'absolute', marginLeft: "37%", marginTop: "20%" }} name="play" size={100} color="#E6EEFA" /><View style={{ width: 350, height: 50, bottom: 0, backgroundColor: '#E6EEFA', borderBottomLeftRadius: 30, borderBottomRightRadius: 30, opacity: 0.6, position: 'absolute' }}>
                             <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-                                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>126k</Text>
+                                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>157</Text>
                                 </View>
                                 <Ionicons style={{ marginTop: 7, marginRight: 7 }} name="share" size={30} color="black" />
                             </View>
@@ -95,7 +95,7 @@ const Home = () => {
                         </View>
                         <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/theRock.jpg')} /><Ionicons style={{ position: 'absolute', marginLeft: "37%", marginTop: "20%" }} name="play" size={100} color="#E6EEFA" /><View style={{ width: 350, height: 50, bottom: 0, backgroundColor: '#E6EEFA', borderBottomLeftRadius: 30, borderBottomRightRadius: 30, opacity: 0.6, position: 'absolute' }}>
                             <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-                                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>126k</Text>
+                                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>1,2m</Text>
                                 </View>
                                 <Ionicons style={{ marginTop: 7, marginRight: 7 }} name="share" size={30} color="black" />
                             </View>
@@ -112,7 +112,7 @@ const Home = () => {
                         <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center", }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/neil.jpg')} /><Ionicons style={{ position: 'absolute', marginLeft: "37%", marginTop: "20%" }} name="play" size={100} color="#E6EEFA" />
                             <View style={{ width: 350, height: 50, bottom: 0, backgroundColor: '#E6EEFA', borderBottomLeftRadius: 30, borderBottomRightRadius: 30, opacity: 0.6, position: 'absolute' }}>
                                 <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-                                    <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>126k</Text>
+                                    <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>3k</Text>
                                     </View>
                                     <Ionicons style={{ marginTop: 7, marginRight: 7 }} name="share" size={30} color="black" />
                                 </View>
