@@ -11,12 +11,13 @@ import {
     TouchableOpacity,
     ActivityIndicator
 } from 'react-native';
-import { Stack, Link, router } from 'expo-router';
+import { Stack, Link, router, useLocalSearchParams } from 'expo-router';
 import { Modal, TouchableWithoutFeedback } from 'react-native';
 import styles from './style/styles';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Home = () => {
-
+    const cond = useLocalSearchParams();
     return (
         <View style={{ alignItems: 'center', backgroundColor: 'white' }}>
             <ScrollView style={styles.container}>
@@ -28,6 +29,9 @@ const Home = () => {
                             headerShadowVisible: false,
                             headerShown: true,
 
+                            headerRight: () => (
+                                <Image style={styles.profilePicture} source={require('../../transparentno.png')} />
+                            )
                         }}
                     />
                 </View>
@@ -40,7 +44,13 @@ const Home = () => {
                                 <Text>@dennisHoffman</Text>
                             </View>
                         </View>
-                        <View style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/panorama1.jpg')} /></View>
+                        <View style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/panorama1.jpg')} /><Ionicons style={{ position: 'absolute', marginLeft: "37%", marginTop: "20%" }} name="play" size={100} color="#E6EEFA" /><View style={{ width: 350, height: 50, bottom: 0, backgroundColor: '#E6EEFA', borderBottomLeftRadius: 30, borderBottomRightRadius: 30, opacity: 0.6, position: 'absolute' }}>
+                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+                                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>157</Text>
+                                </View>
+                                <Ionicons style={{ marginTop: 7, marginRight: 7 }} name="share" size={30} color="black" />
+                            </View>
+                        </View></View>
                     </View>
                     <View style={{ width: 370, height: 350, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
                         <View style={{ display: "flex", flexDirection: "row", alignContent: "center", alignItems: "center", gap: 10 }}>
@@ -50,7 +60,13 @@ const Home = () => {
                                 <Text>@SmithFa</Text>
                             </View>
                         </View>
-                        <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/leonardo.webp')} /></View>
+                        <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/leonardo.webp')} /><Ionicons style={{ position: 'absolute', marginLeft: "37%", marginTop: "20%" }} name="play" size={100} color="#E6EEFA" /><View style={{ width: 350, height: 50, bottom: 0, backgroundColor: '#E6EEFA', borderBottomLeftRadius: 30, borderBottomRightRadius: 30, opacity: 0.6, position: 'absolute' }}>
+                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+                                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>126k</Text>
+                                </View>
+                                <Ionicons style={{ marginTop: 7, marginRight: 7 }} name="share" size={30} color="black" />
+                            </View>
+                        </View></View>
                     </View>
                     <View style={{ width: 370, height: 350, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
                         <View style={{ display: "flex", flexDirection: "row", alignContent: "center", alignItems: "center", gap: 10 }}>
@@ -60,7 +76,13 @@ const Home = () => {
                                 <Text>@SmithFa</Text>
                             </View>
                         </View>
-                        <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/theRock.jpg')} /></View>
+                        <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center" }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/theRock.jpg')} /><Ionicons style={{ position: 'absolute', marginLeft: "37%", marginTop: "20%" }} name="play" size={100} color="#E6EEFA" /><View style={{ width: 350, height: 50, bottom: 0, backgroundColor: '#E6EEFA', borderBottomLeftRadius: 30, borderBottomRightRadius: 30, opacity: 0.6, position: 'absolute' }}>
+                            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+                                <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>1,2m</Text>
+                                </View>
+                                <Ionicons style={{ marginTop: 7, marginRight: 7 }} name="share" size={30} color="black" />
+                            </View>
+                        </View></View>
                     </View>
                     <View style={{ width: 370, height: 350, backgroundColor: "#E6EEFA", borderRadius: 40 }}>
                         <View style={{ display: "flex", flexDirection: "row", alignContent: "center", alignItems: "center", gap: 10 }}>
@@ -70,21 +92,29 @@ const Home = () => {
                                 <Text>@SmithFa</Text>
                             </View>
                         </View>
-                        <View style={{ width: 340, height: 260, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center", }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/neil.jpg')} /></View>
+                        <View style={{ width: 350, height: 268, backgroundColor: "#5790DF", borderRadius: 30, alignSelf: "center", }}><Image style={{ width: 350, height: 268, borderRadius: 30, alignSelf: "center" }} source={require('./images/neil.jpg')} /><Ionicons style={{ position: 'absolute', marginLeft: "37%", marginTop: "20%" }} name="play" size={100} color="#E6EEFA" />
+                            <View style={{ width: 350, height: 50, bottom: 0, backgroundColor: '#E6EEFA', borderBottomLeftRadius: 30, borderBottomRightRadius: 30, opacity: 0.6, position: 'absolute' }}>
+                                <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+                                    <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start' }}><Ionicons style={{ marginTop: 7, marginLeft: 7 }} name="heart" size={30} color="red" /><Text>3k</Text>
+                                    </View>
+                                    <Ionicons style={{ marginTop: 7, marginRight: 7 }} name="share" size={30} color="black" />
+                                </View>
+                            </View>
+                        </View>
                     </View>
                 </View>
             </ScrollView >
             <View style={styles.footer}>
-                <TouchableOpacity onPress={() => alert('Left Button Pressed')} style={styles.buttonHome}>
-                    <Text style={styles.buttonTextHome}>Left</Text>
+                <TouchableOpacity onPress={() => alert('Work in progress...')} style={styles.buttonHome}>
+                    <Ionicons style={{}} name="home" size={30} color="#5790DF" />
                 </TouchableOpacity>
                 <View style={{ backgroundColor: "white", height: 68, width: 68, borderRadius: 100, }}>
                     <TouchableOpacity onPress={() => router.push('pages/Prompts/Prompts')} style={styles.buttonCreate}>
                         <Text style={styles.buttonTextCreate}>+</Text>
                     </TouchableOpacity>
                 </View>
-                <TouchableOpacity onPress={() => alert('Right Button Pressed')} style={styles.buttonSearch}>
-                    <Text style={styles.buttonTextSearch}>Right</Text>
+                <TouchableOpacity onPress={() => alert('Work in progress...')} style={styles.buttonSearch}>
+                    <Ionicons style={{}} name="search" size={30} color="#5790DF" />
                 </TouchableOpacity>
             </View>
         </View>

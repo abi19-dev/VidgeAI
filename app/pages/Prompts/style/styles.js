@@ -9,78 +9,6 @@ const styles = StyleSheet.create({
         width: 58,
         height: 64,
     },
-    gradient: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        backgroundColor: "white"
-    },
-    APIContainer: {
-        marginLeft: 10,
-        marginRight: 10,
-        marginTop: '20%'
-    },
-    tournamentLabel: {
-        fontSize: 25,
-        fontWeight: 'bold',
-        flex: 1,
-        overflow: 'hidden',
-        color: 'black'
-    },
-    seminarLabel: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: 'black',
-        textAlign: 'center',
-    },
-    tournamentScroll: {
-        flexDirection: 'row',
-        gap: 10,
-    },
-    objectContainer: {
-        width: 175,
-        height: 262,
-        backgroundColor: 'white',
-        borderRadius: 30,
-        display: 'flex',
-        flexDirection: 'column',
-    },
-    objectContainerNadolazeci: {
-        width: 280,
-        backgroundColor: 'white',
-        borderRadius: 30,
-        display: 'flex',
-        flexDirection: 'column',
-        height: 'auto',
-        alignContent: 'center',
-        alignItems: 'center',
-        overflow: 'hidden'
-    },
-    APIImage: {
-        width: 155,
-        height: 155,
-        borderRadius: 22,
-        marginTop: 10,
-        alignSelf: 'center'
-    },
-    APIImageNadolazeci: {
-        height: 186,
-        width: 280,
-        borderRadius: 30,
-    },
-    SeminariContainer: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignContent: 'center',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-    seminarContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
     footer: {
         flexDirection: 'row',
         justifyContent: 'space-around',
@@ -132,12 +60,10 @@ const styles = StyleSheet.create({
         alignSelf: "center"
     },
     textInputContainer: {
-        paddingTop: 15,
         backgroundColor: "#FFFFFF",
         borderColor: "rgba(0, 0, 0, 0.2)",
         borderWidth: 2, width: "100%", borderRadius: 20,
         justifyContent: 'flex-start', paddingLeft: 10, height: 40,
-        textAlignVertical: 'top',
         shadowColor: '#000000',
         shadowOffset: {
             width: 0,
